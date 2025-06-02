@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "dochq-staging",
+  "private_key_id": "72db3155a22d5de7f4fb7905930dadcdd46d969e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDF6w5Sv6joUMc6\nT/USs9/F4TFZ66bmXlLfqZHJDeBUBzP20Fw00qYLRgEXodPj80qgfLgYNWTEZtez\nXuBjCa06CBC1uUCexg6xvPzdjELcXR8flsVaV9WSTxYk4YDPxi95j5UOjXR0Ukoq\nORdUCZaZi2InghJ29ucaQp9OGJd5/jevJvqABXksPtuUeCAKIzotFs6HfToCev7s\nEiOUgZ7HKycL9ewmlGDQELQ0tEqnZv1kr1RBCpkO4vCr5HS7fA42hsvKVLD5sl+F\nS6UhXz0jDasIT/KsOqfdlsXlZ54/53Cs4wT2T2WFw0RG5CDHJ8fSQTervr8N6CD/\nelbQFPc9AgMBAAECggEAAyxFXqwyVaLwQImu76ceE0E1iRXOW7JVMZCccI2OJa/O\ngvvg1i+AQRpU6Ka9ZekHHTqAdDq4LZfKZW3VY5S2SuSgb2hK6qrk3nV07D8ohJx5\n2F9SqYEM1+iPcjVTvf4VF5/g3Hwo7c6+MYD1lCtkABPwoT1hY7gs1J6mTqkBUCE4\nn5y6R/yYv3PgW2Dc5OORbGj5dP1Q1oyW7pqLXYc1G/z+V2GP9M4MoDK46+m9c9mY\n+eicpQFAkQZ2f/gi0ZijJwTEk+UFBbayqbTiRgFIjUc3CDIrD+YvBRbWCnw9kPnA\nPUf2aKf+2Zocz7D5xmU+zGUi7n9dnva1ZDUehzcVoQKBgQD3VjsD4ypXw6xIlL22\n+D0PvH0C9qv8B9QeBwjCqYXSEyszoN+zjMrZqV6nS+x5Hr02izLHIUkWkmTqs9cz\nmrJxFjLkC8WyIDZ08YJdjGC68JrKwuH5lxW8R1bDnN3XgdBQMIq3DVYwuuNA+xhu\nSZLlMtLR0cMBfe+G7XTjIPQPHQKBgQDM2bVWlsABXHWJcJZYAgr+GBnMD9FbKYYH\nN8wI1cG0MKp/IWpM0seDNBQIOYTUPfFLJeVMr+un7kRnSwXCHBudmQYM1EUnkmvN\n3DOm0swOzLIj3mzAss1Yb1a+E0k48r4XDBvGnlUoSW+i5nExS5xE/4Z8DAbR9G6w\nUahI0C1uoQKBgH8vFEG3enqO3/Sip7uCgsOoxQ/VEDMVQ3n9W//ddDbGLJzryJxn\ndZffhBC69eqCaAG4KnBDKXY16TbXK34ZulB0fc7OTuZ9sgMIfWTlXohCWRaSh+j0\nS/T5KiCEdX7v/dJ+Y5YlgYClWV58v99Wbfb133qNRp1pyNW1HTn+JAHxAoGBAKHR\nkJfX+dCZcxeg4oKfCoPyEd7K1/yFbqShBQItqRhoISbQBKKvFn+kUfa1SSJH1CYi\nx2Guzh8X7t0RvHi7r2ztBoR34jECTzqNKhgsCJngRRBkkdAe7mtfeEwp+/uKdXLL\nU92wEWEDsbYjB2ODcOxoVZoD/hc4WX/a4W6zVFBBAoGAJ0TXkg4nsVskW9qt1nzU\nQ3Le1nLR+K/D6LuoyaKnJgByY/B/9SCwB0ay2b5/Dbmv+MHA/TB7IEj5x8j+tXnq\naRZGSAgE1V66TqpEh/ReCSqta/my22dr4XGBtqxmSJrfaLgSoNDMTmi7BKTLZsvh\ncleF9J4+MmwC/PWcqLkX8K0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "triage-text-to-speech@dochq-staging.iam.gserviceaccount.com",
+  "client_id": "110787564698092324119",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/triage-text-to-speech%40dochq-staging.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

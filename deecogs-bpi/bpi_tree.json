@@ -1,0 +1,40 @@
+{
+    "greeting": {
+        "question": "Welcome.",
+        "next_node": "identify_issue",
+        "action": "continue"
+    },
+    "identify_issue": {
+        "question": "Hi, I'm Alia. How can I help you today?",
+        "next_node_map": {
+            "Lower back pain": "assess_lower_back_issue",
+            "Others": "other_issue"
+        },
+        "action": "continue"
+    },
+    "assess_lower_back_issue": {
+        "question": "I'm sorry this is affecting you. Could you answer a few more questions to better undertsand the issue?",
+        "next_node_map": {
+            "Sure": "see_pain_location",
+            "No, Thank you.": "end_conversation"
+        },
+        "action": "continue"
+    },
+    "see_pain_location": {
+        "question": "Can you point to the location showing where exactly you are facing problem?",
+        "next_node": "assess_pain_location",
+        "action": "camera_on"
+    },
+    "assess_pain_location": {
+        "question": "Thank you for sharing the location of your pain. Would you be comfortable to answer a few questions to understand the problem better?",
+        "action": "next_api"
+    },
+    "end_conversation": {
+        "question": "Thank you for your time. If you need assistance in the future, feel free to reach out.",
+        "action": "close_chat"
+    },
+    "other_issue": {
+        "question": "For now, I'm just able to assist with lower back pain. If you have any other issues, please revisit after sometime.",
+        "action": "close_chat"
+    }
+}

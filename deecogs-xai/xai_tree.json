@@ -1,0 +1,158 @@
+{
+    "answer_more_questions": {
+        "question": "Welcome.",
+        "options": ["Yes", "No"],
+        "next_node_map": {
+            "Yes": "rate_the_pain",
+            "No": "end_conversation"
+        },
+        "action": "continue"
+    },
+    "end_conversation": {
+        "question": "Thank you for your time. If you need assistance in the future, feel free to reach out.",
+        "action": "close_chat"
+    },
+    "rate_the_pain": {
+        "question": "On a scale from 0 to 10, how intense is your lower back pain? With 0 being no pain and 10 being the worst pain imaginable.",
+        "options": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+        "next_node": "pain_with_movement",
+        "action": "continue"
+    },
+    "pain_with_movement": {
+        "question": "Do you feel more discomfort when bending forward or leaning backward? Or is it the same for both?",
+        "options": ["Bending forward", "Leaning backward", "Both equally", "Neither"],
+        "next_node": "pain_origin",
+        "action": "continue"
+    },
+    "pain_origin": {
+        "question": "Did the pain begin after an accident, injury, or sudden strain on your back? Or did it start on its own?",
+        "options": ["Yes, after an accident or injury", "No, it just started on its own"],
+        "next_node_map": {
+            "Yes, after an accident or injury": "trauma_flow",
+            "No, it just started on its own": "spontaneous_leg_pain"
+        },
+        "action": "continue"
+    },
+    "spontaneous_leg_pain": {
+        "question": "Did you also have leg pain when your back pain started? ",
+        "options": ["Yes", "No"],
+        "next_node_map": {
+            "Yes": "which_leg",
+            "No": "spontaneous_worsening"
+        },
+        "action": "continue"
+    },
+    "which_leg": {
+        "question": "Is the leg pain in one leg or both?",
+        "options": ["One leg", "Both legs"],
+        "next_node_map": {
+            "One leg": "one_leg_red_flags",
+            "Both legs": "both_legs_cauda_equine"
+        },
+        "action": "continue"
+    },
+    "both_legs_cauda_equine": {
+        "question": "Are you experiencing numbness around the perianal area, difficulty controlling urination, or loss of full rectal sensation?",
+        "options": ["Yes", "No"],
+        "next_node_map": {
+            "Yes": "report_to_ed",
+            "No": "both_legs_red_flags"
+        },
+        "action": "continue"
+    },
+    "report_to_ed": {
+        "question": "Please immediately report to the Emergency Department.",
+        "options": [],
+        "action": "close_chat"
+    },
+    "both_legs_red_flags": {
+        "question": "Do you have any of these symptoms: fever, history of cancer, drug use, HIV, osteoporosis, or pain at night?",
+        "options": ["Yes", "No"],
+        "next_node_map": {
+            "Yes": "infection_tumor_fracture_advice",
+            "No": "video_assessment_required"
+        },
+        "action": "continue"
+    },
+    "one_leg_red_flags": {
+        "question": "Do you have any of these symptoms: fever, history of cancer, drug use, HIV, osteoporosis, or pain at night?",
+        "options": ["Yes", "No"],
+        "next_node_map": {
+            "Yes": "infection_tumor_fracture_advice",
+            "No": "video_assessment_required"
+        },
+        "action": "continue"
+    },
+    "infection_tumor_fracture_advice": {
+        "question": "Please take pain relief. If the situation persists for 2-3 days, consult a doctor, as it may be due to an infection, tumor, or lumbar compression fracture.",
+        "options": [],
+        "action": "close_chat"
+    },
+    "video_assessment_required": {
+        "question": "We'll start with a quick video assessment to analyze your range of motion. Get Ready!",
+        "options": [],
+        "action": "next_api"
+    },
+    "spontaneous_worsening": {
+        "question": "Is the pain getting worse as the days go by?",
+        "options": ["Yes", "No"],
+        "next_node_map": {
+            "Yes": "video_assessment_required",
+            "No": "lumbar_strain_video"
+        },
+        "action": "continue"
+    },
+    "lumbar_strain_video": {
+        "question": "We'll start with a quick video assessment to analyze your range of motion. Get Ready!",
+        "options": [],
+        "action": "next_api"
+    },
+    "trauma_flow": {
+        "question": "Please explain how the injury occurred. If not clear, we'll ask for more details.",
+        "options": ["Explained well", "Not clear"],
+        "next_node_map": {
+            "Explained well": "trauma_violence_check",
+            "Not clear": "trauma_clarify"
+        },
+        "action": "continue"
+    },
+    "trauma_clarify": {
+        "question": "Please describe the instance better. When and how did the injury happen?",
+        "options": [],
+        "next_node": "trauma_violence_check",
+        "action": "continue"
+    },
+    "trauma_violence_check": {
+        "question": "Was this due to violence or a road accident?",
+        "options": ["Yes", "No"],
+        "next_node_map": {
+            "Yes": "trauma_report_advice",
+            "No": "trauma_difficulty_walking"
+        },
+        "action": "continue"
+    },
+    "trauma_report_advice": {
+        "question": "We recommend reporting this incident to the authorities. Please do so as soon as possible.",
+        "options": [],
+        "next_node": "trauma_difficulty_walking",
+        "action": "continue"
+    },
+    "trauma_difficulty_walking": {
+        "question": "Are you finding it harder to walk than usual?",
+        "options": ["Yes", "No"],
+        "next_node_map": {
+            "Yes": "leg_weakness_check",
+            "No": "video_assessment_required"
+        },
+        "action": "continue"
+    },
+    "leg_weakness_check": {
+        "question": "Do you feel weakness or instability in your leg joints like the knee, ankle, or toes?",
+        "options": ["Yes", "No"],
+        "next_node_map": {
+            "Yes": "report_to_ed",
+            "No": "video_assessment_required"
+        },
+        "action": "continue"
+    }
+}
